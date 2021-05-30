@@ -2,8 +2,8 @@
 	padding: 20px;
 }
 
-.searchPage__info > p {
-	margin-bottom: 10px;
+p {
+	margin: 10px;
 	font-size: 14px;
 }
 
@@ -16,3 +16,15 @@
 	text-transform: inherit;
 	margin: 5px;
 }
+
+/* .Dateformat {
+	background-color:"#9fe6a0" ;
+	padding:10 ;
+	margin:10 ;
+	display:"flex" ;
+	border-radius:5;
+} */
+/* .Dateformat > p{
+	margin-bottom: 10px;
+	font-size: 14px;
+} */

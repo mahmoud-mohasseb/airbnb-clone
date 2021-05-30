@@ -1,8 +1,15 @@
 # AirBNB-Clone - React JS
 Note - Educational Purpose Only
 
-## Demo Images
 
+## Adding selected date and Found nearBy to Search page based on your choice Explore nearby or You selected date 
+
+<p style="float: left">
+    <img src="/images/date.png" width="33%" />
+    <img src="/images/foundnearby.png" width="33%" />
+</p>
+
+## Demo Images
 <p style="float: left">
     <img src="/images/img1.png" width="33%" />
     <img src="/images/img2.png" width="33%" />
@@ -10,7 +17,6 @@ Note - Educational Purpose Only
 </p>
 
 ### Let Get Started
-
     git clone https://github.com/LuffyAnshul/airbnb-clone.git
     cd airbnb-clone
     npm install

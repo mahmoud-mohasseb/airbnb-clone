@@ -39,5 +39,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Note - Educational Purpose Only",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmoud-mohasseb/airbnb-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmoud-mohasseb/airbnb-clone/issues"
+  },
+  "homepage": "https://github.com/mahmoud-mohasseb/airbnb-clone#readme"
 }

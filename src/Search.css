@@ -16,6 +16,18 @@
 	left: 0;
 	top: 380px;
 }
+/* .search >h1{
+	display: flex;
+	font-size: small;
+	align-items: center;
+	justify-content: space-between;
+	width: 200px;
+	padding: 20px;
+	background-color:white;
+	position: absolute;
+	left: 0;
+	top: 320px;
+} */
 
 .search > input {
 	width: 539px;

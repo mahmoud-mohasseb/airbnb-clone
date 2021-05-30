@@ -1,14 +1,59 @@
-import React from 'react';
+import React  from 'react';
 import './SearchPage.css';
 import { Button } from "@material-ui/core";
 import SearchResult from "./SearchResult";
+import { useLocation } from "react-router-dom";
+
 
 function SearchPage() {
+    const location = useLocation();
+   const strstart =location.state.startDate.toString();
+   const strend =location.state.endDate.toString();
+    console.log(strstart);
+ 
+const info =  (
+<div style={{display:"flex"}}>
+<div 
+style={{
+backgroundColor:"#9fe6a0" ,
+padding:10,
+margin:10 ,
+display:"flex" ,
+borderRadius:10
+}}
+>
+    <h2 style={{fontSize:15 ,marginTop:9}}>From:</h2>
+    <p>Num:{ strstart.split(" ", 4)[2]}</p>
+    <p>Day:{ strstart.split(" ", 4)[0]}</p>
+    <p>Month:{strstart.split(" ", 4)[1] }</p>
+    <p>Year:{strstart.split(" ", 4)[3] }</p>
+   </div>
+    <div style={{
+        backgroundColor:"#cf0000" ,
+        padding:10,
+        margin:10 ,
+        display:"flex" ,
+       borderRadius:10
+}}>
+  <h2 style={{fontSize:15,marginTop:9}}>To:</h2>
+    <p>Num:{ strend.split(" ", 4)[2]}</p>
+    <p>Day:{ strend.split(" ", 4)[0]}</p>
+    <p>Month:{strend.split(" ", 4)[1] }</p>
+    <p>Year:{strend.split(" ", 4)[3] }</p>
+             </div>
+             </div>
+             )
+const findnearby=(
+<div style={{
+    fontWeight:"bold" , 
+    fontSize:"30px" ,
+}}>Found NearBy</div>)   
     return (
         <div className='searchPage'>
             <div className='searchPage__info'>
-                <p>62 stays · 26 august to 30 august · 2 guest</p>
-                <h1>Stays nearby</h1>
+                {/* <div style={{display:'flex' }}> */}          
+{strstart ? info : findnearby}
+                <h3>Stays nearby</h3>
                 <Button variant="outlined">Cancellation Flexibility</Button>
                 <Button variant="outlined">Type of place</Button>
                 <Button variant="outlined">Price</Button>
